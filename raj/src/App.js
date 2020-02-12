@@ -21,7 +21,7 @@ componentDidMount(){
     console.log(this.state)
   })
   .catch(err => console.log(err))
-  .finally(
+  // .finally(
     axios
     .get(`https://api.github.com/users/rupadhyayahacks/followers`)
     .then(res => {
@@ -33,9 +33,9 @@ componentDidMount(){
     .catch(err => {
       console.log(err)
     })
-    .finally(console.log('axios complete'))
+    // .finally(console.log('axios complete'))
 
-  )
+  
 
 }
   
